@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Questionnaire sur Le Vendeur de Palmes</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="icon.png">
+</head>
+<body>
+  <h1>Le questionnaire sur la série Le Vendeur de Palmes</h1>
+  <h2>Ces questions n'ont qu'une seule réponse.</h2>
+  <form id="questionnary">
+      <fieldset>
+          <legend>Question 1 : Quel est le nom du vendeur de palmes ?</legend>
+          <input type="radio" name="q1" value="a" id="q1a"> a) Gabriel<br>
+          <input type="radio" name="q1" value="b" id="q1b"> b) Alain<br>
+          <input type="radio" name="q1" value="c" id="q1c"> c) Ockatarinnelabellatchitchi<br>
+      </fieldset>
+      <br>
+      <fieldset>
+          <legend>Question 2 : De quoi est mort Gabriel ?</legend>
+          <input type="radio" name="q2" value="a" id="q2a"> a) De noyade<br>
+          <input type="radio" name="q2" value="b" id="q2b"> b) En trébuchant sur un escargot<br>
+          <input type="radio" name="q2" value="c" id="q2c"> c) De mort naturelle<br>
+      </fieldset>
+      <br>
+      <fieldset>
+          <legend>Question 3 : Comment font les gens pour s'hydrater dans un monde sans eau ?</legend>
+          <input type="radio" name="q3" value="a" id="q3a"> a) 6<br>
+          <input type="radio" name="q3" value="b" id="q3b"> b) Grâce aux fruits du noyer géant<br>
+          <input type="radio" name="q3" value="c" id="q3c"> c) En buvant de l'eau<br>
+      </fieldset>
+      <br>
+      <fieldset>
+          <legend>Question 4 : Quelle est la caractéristique principale de Diego ?</legend>
+          <input type="radio" name="q4" value="a" id="q4a"> a) Il marche à cloche pied<br>
+          <input type="radio" name="q4" value="b" id="q4b"> b) Il a 3 tibias<br>
+          <input type="radio" name="q4" value="c" id="q4c"> c) Il est aveugle.<br>
+      </fieldset>
+      <br>
+      <fieldset>
+          <legend>Question 5 : Que décide de faire Alexandre pour s'échapper de Diego, dans un geste de désespoir ?</legend>
+          <input type="radio" name="q5" value="a" id="q5a"> a) Il invoque Jésus.<br>
+          <input type="radio" name="q5" value="b" id="q5b"> b) Il achète une chaise.<br>
+          <input type="radio" name="q5" value="c" id="q5c"> c) Il boit du dioxyde de soude.<br>
+      </fieldset>
+      <br>
+      <div id="submit">
+        <input type="button" value="Soumettre" onclick="calculateScore()">
+      </div>
+  </form>
+  <div id="resultsContainer">
+    <h3 id="results"></h3>
+  </div>
+  <footer id="footer">
+    <p>Des questions ? Contactez le aide@levendeurdepalmes.com</p>
+    <p>Pour toutes réclamations, contactez le +33 6 14 69 75 42</p>
+    <p>© 2023 - Tous droits réservés</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
