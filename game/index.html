@@ -1,28 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="style.css">
-    <title>Le clicker de palmes</title>
-</head>
-<body>
-    <div class="game-container">
-        <h1>Clique sur les palmes</h1>
-        <p>Nombre de palmes sauvées : <span id="points">0</span></p>
-        <img id="tree" src="img/palmes.png" alt="Tree">
-    </div>
-    <div id="palmes-container"></div>
-    <div id="scientist">
-      <p>2</p>
-      <img id="scientist-icon" src="img/scientist.png" alt="scientist" height="150px" width="150px">
-      <p id="scientist-count">0</p>
-    </div>
-    <footer id="footer">
-      <p>Des questions ? Contactez le aide@levendeurdepalmes.com</p>
-      <p>Pour toutes réclamations, contactez le +33 6 14 69 75 42</p>
-      <p>© 2023 - Tous droits réservés</p>
-    </footer>
-    <script src="script.js"></script>
-</body>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Extraction de Fruits du Noyer Géant</title>
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div id="game-container">
+          <div id="background"></div>
+          <div id="bedouin" class="purchase-item">
+            <div class="purchase-item-nb"></div>
+            <div class="purchase-item-title">
+                Acheter un bédouin
+            </div>
+            <img src="img/bedouin.png" alt="" height="200px" width="200px">
+          </div>
+          <div id="light-vehicle" class="purchase-item">
+            <div class="purchase-item-nb"></div>
+            <div class="purchase-item-title">
+                Acheter un véhicule léger
+            </div>
+            <img src="img/machineSmall.png" alt="" height="200px" width="200px">
+          </div>
+          <div id="heavy-vehicle" class="purchase-item">
+            <div class="purchase-item-nb"></div>
+            <div class="purchase-item-title">
+                Acheter un véhicule lourd
+            </div>
+            <img src="img/machineBig.png" alt="" height="200px" width="200px">
+          </div>
+          <button id="extract-btn">Extraire les Fruits</button>
+          <div id="money">Argent : $</div>
+      </div>
+      <script src="script.js"></script>
+  </body>
 </html>
+

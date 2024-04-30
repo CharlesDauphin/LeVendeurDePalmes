@@ -1,111 +1,81 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: rgb(31, 31, 31);
-    background-image: url(img/alain.png);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-}
-
-.game-container {
-    max-width: 400px;
+#game-container {
+    width: 940px;
+    height: 560px;
+    position: relative;
     margin: 0 auto;
-    padding: 20px;
-    background-color: rgb(31, 31, 31);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
 }
 
-h1 {
-    font-size: 24px;
-    color: rgb(190, 192, 177);
-}
-
-p {
-    font-size: 16px;
-    color: rgb(190, 192, 177);
-}
-
-#tree {
-    width: 200px;
-    cursor: pointer;
-}
-
-.palme {
-    position: absolute;
-    transition: opacity 1s; /* La durée du fondu est d'une seconde. */
-}
-
-.palme:hover {
-    opacity: 0;
-}
-
-.palme {
-    position: absolute;
-    width: 50px; /* Largeur de la palme */
-    height: 50px; /* Hauteur de la palme */
-    animation: descend 1s linear;
-    transition: opacity 1s; /* La durée du fondu est d'une seconde. */
-}
-
-@keyframes descend {
-    from {
-        transform: translateY(0);
-        opacity: 1;
-    }
-    to {
-        transform: translateY(50px); /* Ajustez la valeur pour contrôler la descente. */
-        opacity: 0;
-    }
-}
-
-.modal {
-    position: fixed;
-    top: 0;
-    left: 0;
+#background {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+    background-image: url('img/alain.png');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-.modal-content {
-    background-color: rgb(24, 24, 24);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+button{
+    color: black;
+    font-family: monospace;
+    background-color: aliceblue;
+    border-radius: 50px;
+}
+
+.purchase-item {
+    position: absolute;
+    bottom: 50px;
+    transition: transform .1s;
+}
+
+.purchase-item:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+.purchase-item-title{
+    color: aliceblue;
+    font-family: monospace;
+    font-size: larger;
     text-align: center;
 }
 
-button#close-modal {
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
+#bedouin {
+    left: 50px;
 }
 
-footer {
-    background-color: rgb(24, 24, 24);
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-    margin-top: auto;
+#light-vehicle {
+    left: 300px;
 }
 
-#scientist {
-  margin-top: 20px;
+#heavy-vehicle {
+    left: 550px;
 }
 
-#scientist-count {
-  margin-top: -10px;
-  font-size: 50px;
-  color: #fff;
+#extract-btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 16px;
+    transition: transform .1s;
+}
+
+#extract-btn:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+    transform: scale(1.2);
+}
+
+#money {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: monospace;
 }
