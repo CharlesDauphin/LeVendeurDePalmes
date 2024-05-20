@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Extraction de Fruits du Noyer Géant</title>
+        <link rel="icon" href="img/icon.png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="lines"></div>
+        <div id="game-container">
+            <div id="background"></div>
+            <div class="action-button">
+                <button id="extraction" class="action">
+                    Extraire
+                    <p>Appuyer pour gagner <br> 5$</p>
+                </button>
+                <button id="gamble" class="action">
+                    Parier
+                    <p>Entrer une valeur à parier. <br> Vous pouvez gagner le double !</p>
+                </button>
+                <button id="charity" class="action">
+                    Donner à la charité
+                    <p>Entrer une valeur à donner <br> à la charité.</p>
+                </button>
+            </div>
+            <div id="bedouin" class="purchase-item">
+                <div class="purchase-item-lv">Niveau <span id="bedouin-level">1</span></div>
+                <div class="purchase-item-title"></div>
+                <div class="purchase-item-nb"></div>
+                <img src="img/bedouins/bedouin.png" alt="" height="200px" width="200px" class="level-1">
+                <img src="img/bedouins/bedouins1.png" alt="" height="200px" width="200px" class="level-5">
+                <img src="img/bedouins/bedouins2.png" alt="" height="200px" width="200px" class="level-10">
+                <img src="img/bedouins/bedouins3.png" alt="" height="200px" width="200px" class="level-15">
+            </div>
+            <div id="light-vehicle" class="purchase-item">
+                <div class="purchase-item-lv">Niveau <span id="light-vehicle-level">1</span></div>
+                <div class="purchase-item-title"></div>
+                <div class="purchase-item-nb"></div>
+                <img src="img/light-vehicules/light-vehicules.png" alt="" height="200px" width="200px" class="level-1">
+                <img src="img/locked-icon.png" alt="Locked" class="lock-image">
+                <img src="img/light-vehicules/light-vehicules1.png" alt="" height="200px" width="200px" class="level-5">
+                <img src="img/light-vehicules/light-vehicules2.png" alt="" height="200px" width="200px" class="level-10">
+                <img src="img/light-vehicules/light-vehicules3.png" alt="" height="200px" width="200px" class="level-15">
+            </div>
+            <div id="heavy-vehicle" class="purchase-item">
+                <div class="purchase-item-lv">Niveau <span id="heavy-vehicle-level">1</span></div>
+                <div class="purchase-item-title"></div>
+                <div class="purchase-item-nb"></div>
+                <img src="img/heavy-vehicules/heavy_vehicules.png" alt="" height="200px" width="200px" class="level-1">
+                <img src="img/locked-icon.png" alt="Locked" class="lock-image">
+                <img src="img/heavy-vehicules/heavy-vehicules1.png" alt="" height="200px" width="200px" class="level-5">
+                <img src="img/heavy-vehicules/heavy-vehicules1.png" alt="" height="200px" width="200px" class="level-10">
+                <img src="img/heavy-vehicules/heavy-vehicules3.png" alt="" height="200px" width="200px" class="level-15">
+            </div>
+            <div id="money">Argent : $0</div>
+            <div id="total-income"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,275 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    animation: colorPulse 5s infinite;
+    font-family: monospace;
+    font-size: 12px;
+    color: #000;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#lines {
+    position: absolute;
+    inset: 0;
+    background-image:linear-gradient(transparent, transparent 3px, #222);
+    background-size: 4px 4px;
+    z-index: 200;
+    pointer-events: none;
+    opacity: 50%;
+}  
+
+#background {
+    width: 100%;
+    height: 100%;
+    background-image: url('img/alain.png');
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* CSS */
+#extraction {
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    top: 80px;
+    left: 20px;
+}
+
+#extraction:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 82px;
+  left: 22px;
+}
+
+@media (min-width: 768px) {
+  #extraction {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* CSS */
+#gamble {
+    position: absolute;
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: absolute;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    top: 80px;
+    left: 230px;
+}
+
+#gamble:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 82px;
+    left: 232px;
+}
+
+@media (min-width: 768px) {
+    #gamble {
+    padding: 0.25em 0.75em;
+  }
+}
+
+/* CSS */
+#charity {
+    font-family: monospace;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    /* text-transform: uppercase; */
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    top: 80px;
+    left: 331px;
+}
+
+#charity:active {
+    box-shadow: 0px 0px 0px 0px;
+    top: 82px;
+    left: 333px;
+}
+
+@media (min-width: 768px) {
+    #charity {
+    padding: 0.25em 0.75em;
+  }
+}
+
+.purchase-item {
+    position: absolute;
+    bottom : 50px;
+    transition: transform .1s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.purchase-item:hover{
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1);
+}
+
+.purchase-item img {
+    margin-bottom: 10px;
+}
+
+.purchase-item-title{
+    position: absolute;
+    color: black;
+    font-family: monospace;
+    font-size: larger;
+    right: 50px;
+    margin-top: 20px;
+    bottom: 182px;
+    left: 20px;
+    background-color: aliceblue;
+    border: 3px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    padding: 2px;
+}
+
+.purchase-item-lv{ 
+    color: black;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center; 
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    border: 3px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    padding: 2px;
+}
+
+/* #bedouin {
+    position: absolute;
+    top: 20px;
+}
+
+#light-vehicle {
+    position: absolute;
+    top: 220px;
+}
+
+#heavy-vehicle {
+    position: absolute;
+    top: 420px;
+} */
+
+#bedouin {
+    left: 50px;
+}
+
+#light-vehicle {
+    left: 300px;
+}
+
+#heavy-vehicle {
+    left: 550px;
+}
+
+#money {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: monospace;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+
+#total-income{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: monospace;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+
+.locked {
+    display: none; /* Cacher l'image par défaut */
+}
+
+.lock-image {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: 100px;
+    width: 65%;
+    height: 50%;
+    
+}
+
+.purchase-item img.level-5,
+.purchase-item img.level-10,
+.purchase-item img.level-15 {
+    display: none;
+}
+
+.level-1, .level-5, .level-10, .level-15 {
+    border: 3px solid;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+}
+
+.screen:after {
+    background-image:linear-gradient(transparent, transparent 3px, #222);
+    background-size:4px 4px;
+    bottom:0;
+    content:"";
+    left:0;
+    pointer-events:none;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:2;
+}
